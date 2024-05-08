@@ -21,7 +21,7 @@ type props = {
 
 export default function HeaderCompone({url, stkThumb, id}: props) {
 
-  const dispatch: AppDispatch = useDispatch();
+
 
   const navigation = useNavigation<propsStack>();
   const onBackPress = () => {
@@ -53,14 +53,14 @@ export default function HeaderCompone({url, stkThumb, id}: props) {
         text2: 'Them thanh cong 👋'
       })
 
-      dispatch(getDatafromStorage(KEYBOOKMARK.KEY));
+  
     }
   
       
     } catch (error) {
       storage.save({key: KEYBOOKMARK.KEY, data: [data]});
 
-      dispatch(getDatafromStorage(KEYBOOKMARK.KEY));
+    
 
 
     }

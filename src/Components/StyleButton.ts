@@ -93,7 +93,7 @@ export const styleButton = StyleSheet.create({
     width:'100%' , height:100,
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 20,marginBottom:10 , 
+    padding: 20,  marginTop:15 ,
 
     backgroundColor: color.graysearch,
     borderRadius: 12,

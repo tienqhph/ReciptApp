@@ -11,6 +11,10 @@ export  type RootStackParmsList = {
         id:string
     },
 
+    Search:{
+        DataSearch:string
+    }
+
 
 
 }
@@ -20,3 +24,4 @@ export  type RootStackParmsList = {
 
 export type propsStack = NativeStackNavigationProp<RootStackParmsList,NAME_SCREENS.BOTTOMTAB>
 export type PropsRoute = RouteProp<RootStackParmsList , NAME_SCREENS.DETAIL>
+export type PropsRouteSearch = RouteProp<RootStackParmsList , NAME_SCREENS.SEARCH>

@@ -31,7 +31,7 @@ export default function Detail() {
   
   return (
     <View  style = {{flex:1}}>
-      <HeaderCompone url={meals?.strMealThumb} stkThumb={meals?.strMeal} id={meals?.idMeal}/>
+      <HeaderCompone url={meals?.strMealThumb??"https://thietbiquayphim.com/wp-content/uploads/2022/05/meo-chup-anh-do-an-toi-dep.png"} stkThumb={meals?.strMeal} id={meals?.idMeal}/>
       <BodyComponent meals={meals}/>
 
       <Toast/>
